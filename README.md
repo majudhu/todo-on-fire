@@ -1,5 +1,11 @@
 # todo on Firebase
 
+## Important files are
+- public/index.html
+- functions/index.js
+
+> These are the only files that need only be changed after `firebase init`
+
 ## Commands
 
 ### Setup
