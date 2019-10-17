@@ -5,8 +5,7 @@
 ### Setup
 
 - `npm install -g firebase-tools`
-- `firebase login`
-- ~~`firebase init`~~
+- ~~`firebase init`~~ (create new empty firebase project)
 
 ### Serve Locally
 
@@ -17,6 +16,7 @@
 
 ### Deploy
 
+- `firebase login`
 - `firebase deploy`
 
 ### CLI Reference
