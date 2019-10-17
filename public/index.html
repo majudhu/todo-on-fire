@@ -14,6 +14,7 @@
     <script defer src="/__/firebase/7.2.0/firebase-storage.js"></script> -->
   <!-- initialize the SDK after all desired features are loaded -->
   <!-- <script defer src="/__/firebase/init.js"></script> -->
+  <script defer src="main.js"></script>
 </head>
 
 <body>
@@ -21,32 +22,6 @@
   <button id="add">Add</button>
   <button id="get">Get</button>
   <div id="list"></div>
-
-  <script>
-    let txt = document.getElementById('txt');
-    let add = document.getElementById('add');
-    let get = document.getElementById('get');
-    let list = document.getElementById('list');
-
-    get.addEventListener('click', e =>
-      fetch('https://asia-east2-todo-on-fire-c660e.cloudfunctions.net/get')
-        .then(response => response.json())
-        .then(json => {
-          list.innerHTML = '';
-          for (todo in json) {
-            let p = document.createElement('p');
-            p.textContent = json[todo].text;
-            list.appendChild(p);
-          }
-        })
-    );
-
-    add.addEventListener('click', e =>
-      fetch('https://asia-east2-todo-on-fire-c660e.cloudfunctions.net/add',
-        { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: "text=" + txt.value })
-        .then(console.log('added'))
-    );
-  </script>
 </body>
 
 </html>

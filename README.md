@@ -1,5 +1,7 @@
 # todo on Firebase
-[TEST LIVE VERSION](https://todo-on-fire-c660e.firebaseapp.com/)
+
+### Test a live version
+- <https://todo-on-fire-c660e.web.app> OR <https://todo-on-fire-c660e.firebaseapp.com> 
 
 ## Important files are
 
